@@ -67,7 +67,7 @@ class Main:
         return self.finalURL
 
     def download_image_from_URL(self, link):
-        self.localImageName = "BingWallpaper__" + self.todayDate + ".jpg"
+        self.localImageName = "BingWallpaper_" + self.todayDate + ".jpg"
         urllib.request.urlretrieve(link, self.myResourceDirectory + self.localImageName)
         print("Image Downloaded")
         return self.localImageName
